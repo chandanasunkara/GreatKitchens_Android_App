@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgWelcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:src="@drawable/welcome_food" />
+    <ImageView
+        android:id="@+id/imgAppIconImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_food_app_foreground"
+        android:layout_below="@id/imgWelcomeImage"/>
+    <TextView
+        android:id="@+id/txtWelcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAppIconImage"
+        android:text="Welcome to"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="#9e9d24"/>
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcomeMessage"
+        android:text="@string/great_kitchens"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#e65100"/>
+
+</RelativeLayout>

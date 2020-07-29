@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgActionOrderPlaced"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/action_order_placed"
+            android:layout_above="@id/txtYayMessage"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txtYayMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Yay!!!"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtSuccessMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/order_placed"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtYayMessage"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/cart_button_background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</FrameLayout>
